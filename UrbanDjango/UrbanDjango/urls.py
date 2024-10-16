@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-import UrbanDjango.task2
+
 
 from task2.views import class_page, func_page
 #from django.views.generic import TemplateView
