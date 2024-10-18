@@ -1,26 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "fourth_task/menu.html" %}
+
+{% block pagename %}
     <h1><b><strong>НАСТОЛЬНЫЕ ИГРЫ</strong></b></h1>
-    <ul>
-        <li> <i>Шахматы</i> <button> <h6> Купить </h6></button></li>
-        <li> <i>Шашки</i> <button> <h6> Купить </h6></button></li>
-        <li> <i>Нарды</i> <button> <h6> Купить </h6></button></li>
-        <li> <i>Гонки</i> <button> <h6> Купить </h6></button></li>
-    </ul>
-    <p>
+{% endblock %}
 
-        <button>
-            <a href="http://127.0.0.1:8000/" class="button"> <strong> Вернуться обратно </a>
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
 
-        </button>
-       
-
-    </p>
-
-</body>
-</html>
+{% block content %}
+    {% for i in games %}
+        <p> {{i}} <button> <h6> Купить </h6></button></p>
+    {% endfor %}
+{% endblock %}

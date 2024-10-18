@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body bgcolor="grey" text="white">
 
-    <h1><b><strong>ГЛАВНАЯ СТРАНИЦА</strong> </b> </h1>
-    <h3><i>Магазин настольных игр</i></h3>
-    <a href="#"> Главная </a>
-    <p>
-    <a href="http://127.0.0.1:8000/second"> Магазин </a>
-    </p>
-    <p>
-    <a href="http://127.0.0.1:8000/third"> Корзина </a>
-    </p>
+{% extends "fourth_task/menu.html" %}
+
+
+{% block pagename %}
+    {{ block.super }}
+{% endblock %}
+
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
 
 
 
-</body>
-</html>
+

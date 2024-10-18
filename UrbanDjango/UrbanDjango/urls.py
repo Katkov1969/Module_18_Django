@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from task3.views import main_page, second_page, third_page
+from task4.views import main_page, second_page, third_page
 #from task2.views import class_page, func_page
 #from django.views.generic import TemplateView
 
